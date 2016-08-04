@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_leaveAdd"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/leave_add_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.Drawer.ArrowAnimation"
+        app:titleTextColor="@android:color/white"/>
+
+    <ScrollView
+        android:id="@+id/sv_leave_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_leave_why"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_for_layout"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                >
+
+                <TextView
+                    style="@style/text_set"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/leaveType"/>
+
+                <TextView
+                    android:id="@+id/tv_leave_why"
+                    style="@style/text_set"
+                    android:drawableRight="@drawable/ic_action_arrow"
+                    android:gravity="center"
+                    android:text="@string/chooseType"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_for_layout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_leave_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <TextView
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/leave_start"/>
+
+                    <TextView
+                        android:id="@+id/tv_leave_start"
+                        style="@style/text_set"
+                        android:drawableRight="@drawable/ic_action_arrow"
+                        android:gravity="center"
+                        android:text="@string/chooseType"/>
+                </LinearLayout>
+
+                <View style="@style/horizontal_line_gray"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_leave_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <TextView
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/leave_end"/>
+
+                    <TextView
+                        android:id="@+id/tv_leave_end"
+                        style="@style/text_set"
+                        android:drawableRight="@drawable/ic_action_arrow"
+                        android:gravity="center"
+                        android:text="@string/chooseType"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_for_layout"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    style="@style/text_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/leave_info"/>
+
+                <EditText
+                    android:id="@+id/et_leave_why"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:lines="6"
+                    android:padding="4dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit_leave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_for_submit"
+                android:text="@string/leave_submit"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

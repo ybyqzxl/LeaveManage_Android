@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">请假管理</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="main_title">请假管理</string>
+    <string name="login">登录</string>
+    <string name="leaveType">请假类型</string>
+    <string name="leave_add">添加</string>
+    <string name="leave_start">开始时间</string>
+    <string name="leave_end">结束时间</string>
+    <string name="leave_info">请假事由</string>
+    <string name="leave_submit">提交</string>
+    <string name="my_leave">我的请假</string>
+    <string name="my_shenpi">我的审批</string>
+    <string name="user_exit">退出登录</string>
+    <string name="chooseType">请选择</string>
+    <string name="agree">同意</string>
+    <string name="refuse">拒绝</string>
+    <string name="xiaojia">销假</string>
+    <string name="personName">姓\u3000\u3000名：</string>
+    <string name="personDepart">部\u3000\u3000门：</string>
+    <string name="personStart">请假时间：</string>
+    <string name="personEnd">结束时间：</string>
+    <string name="personLeaveInfo">请假事由：</string>
+    <string name="leaveState">当前状态：</string>
+</resources>

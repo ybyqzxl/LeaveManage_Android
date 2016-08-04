@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/holo_blue_dark"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/leave_info_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.Drawer.ArrowAnimation"
+        app:titleTextColor="@android:color/white"/>
+
+    <ScrollView
+        android:id="@+id/ll_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_main"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/tab_tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                >
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/personName"/>
+
+                    <TextView
+                        android:id="@+id/tv_name_person"
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        />
+
+
+                </TableRow>
+
+                <View
+                    style="@style/horizontal_line_gray"/>
+
+                <TableRow
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/personDepart"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_depart_person"
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        />
+                </TableRow>
+
+                <View
+                    style="@style/horizontal_line_gray"/>
+
+                <TableRow
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/personStart"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_start_person"
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        />
+
+                </TableRow>
+
+                <View
+                    style="@style/horizontal_line_gray"/>
+
+                <TableRow
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/personEnd"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_end_person"
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        />
+
+                </TableRow>
+
+                <View
+                    style="@style/horizontal_line_gray"/>
+
+                <TableRow
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/personLeaveInfo"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_info_person"
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:lines="6"
+                        android:singleLine="false"
+                        />
+                </TableRow>
+
+                <View
+                    style="@style/horizontal_line_gray"/>
+
+                <TableRow
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/leaveState"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_state_person"
+                        style="@style/text_set"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:lines="2"
+                        android:singleLine="false"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_agree"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/agree"/>
+
+                <Button
+                    android:id="@+id/btn_refuse"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/refuse"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_xj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_for_submit"
+                android:text="@string/xiaojia"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
